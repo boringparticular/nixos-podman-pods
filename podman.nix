@@ -103,7 +103,6 @@ with lib; let
         [
           "${podman} run"
           "--cidfile=${cidFile}"
-          "--log-driver=journald"
           "--cgroups=no-conmon"
           "--rm"
           "--pod-id-file ${podIdFile}"
